@@ -17,6 +17,9 @@ tags = Tag.create([
     },
     {
         name: "funny"  
+    },
+    {
+        name: "others"
     }
 ])
 
