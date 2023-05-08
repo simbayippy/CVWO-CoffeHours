@@ -2,11 +2,11 @@ databases:
   - name: postgres
     ipAllowList: []
     databaseName: my_app_render
-    user: my_app_render
+    user: CVWO_backend
 
 services:
   - type: web
-    name: my_app_render
+    name: CVWO_backend
     env: ruby
     buildCommand: "./render-build.sh"
     startCommand: "bundle exec rails s"

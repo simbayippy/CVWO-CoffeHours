@@ -82,6 +82,10 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+  
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: CVWO_backend_production
   username: CVWO_backend
   password: <%= ENV["CVWO_BACKEND_DATABASE_PASSWORD"] %>
